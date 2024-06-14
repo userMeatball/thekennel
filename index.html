@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>The Kennel</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1>The Kennel</h1>
+        </header>
+
+        <div id="content">
+
+            <div id="dogDetails">
+                <h1 class="contentTitle">Tell us about your dog to get started.</h1>
+                <form id="dogForm" name="dogForm" action="./">
+                    <label for="dogName">Dog's name *</label><br>
+                    <input type="text" id="dogName" name="dogName" required><br>
+                    <label>Gender *</label>
+                    <label for="dogGenderMale">Male</label>
+                    <input type="radio" id="dogGenderMale" name="dogGenderMale" required>
+                    <label for="dogGenderFemale">Female</label>
+                    <input type="radio" id="dogGenderFemale" name="dogGenderFemale">
+                    <label for="dogAge">Dog's age *</label>
+                    <input type="text" id="dogAge" name="dogAge" required>
+                    <label for="dogHealth">Dog's Health *</label>
+                    <input type="text" id="dogHealth" name="dogHealth" required>
+                    <label for="dogFriendly">Is your dog friendly?</label>
+                    <input type="checkbox" id="dogFriendly" name="dogFriendly"required >
+                    <label for="dogExtra">Is there anything else you would like to add?</label>
+                    <textarea id="dogExtra" name="dogExtra" rows="4" cols="50"></textarea>
+                    <input type="submit" id="dogSubmit" name="dogSubmit">
+                </form>
+            </div>
+
+            <div id="reviews">
+                <h1 class="contentTitle">Here are some of our reviews</h1>
+                <div id="review 0">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit?</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script defer src="script.js"></script>
+    </body>
+
+</html>
