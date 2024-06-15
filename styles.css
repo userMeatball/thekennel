@@ -1,29 +1,36 @@
 html {
     all: unset;
 }
-body, h1, h2, form {
+body, h1, h2, form, div, footer, header {
     padding: 0;
     margin: 0;
 }
 
+body {
+    background-color: #eee;
+    height: 100vh;
+    overflow: hidden;
+}
+
 /* HEADER */
+
 header {
     text-align: center;
     background-color: rgb(54, 156, 252);
 }
 
 header h1 {
-    font-size: 100px;
-    color: rgb(250, 250, 250);
+    font-size: 80px;
+    color: rgb(245, 245, 245);
     font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 100;
 }
 
 /* CONTENT */
+
 #content {
-    height: auto;
-    background-color: #eee;
+    display: flex;
+    height: 100%;
 }
 
 .contentTitle {
@@ -31,24 +38,24 @@ header h1 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
-    padding: 20px;
 }
 
 /* FORM DOG DETAILS */
+
 #dogDetails {
+    flex-grow: 2;
+    display: inline-block;
     text-align: center;
 }
 
 #dogForm {
     display: inline-block;
-    text-align: center;
 }
 
 #dogForm label {
     display: block;
     font-family: 'Helvetica', sans-serif;
     font-weight: 600;
-    padding: 10px;
 }
 
 #dogForm input, textarea {
@@ -64,7 +71,136 @@ header h1 {
 
 /* REVIEWS */
 
+#reviews {
+    flex-grow: 1;
+    display: inline-block;
+    text-align: center;
+    overflow: auto;
+    height: auto;
+    width: 300px;
+    background-color: rgb(231, 231, 231);
+}
+
 #reviews div {
+    display: inline-block;
     height: 100px;
     width: 250px;
+}
+
+/*FOOTER*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(54, 156, 252);
+}
+
+footer ul {
+    display: flex;
+    color: rgb(245, 245, 245);
+    list-style-type: none;
+}
+
+footer ul li {
+    flex-grow: 1;
+}
+
+/***** VIEWPORT *****/
+
+@media (max-width: 800px) {
+    
+    /* HEADER */
+    header {
+        text-align: center;
+        background-color: rgb(54, 156, 252);
+    }
+
+    header h1 {
+        font-size: 100px;
+        color: rgb(250, 250, 250);
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* CONTENT */
+    #content {
+        display: block;
+        height: auto;
+    }
+
+    .contentTitle {
+        font-size: 40px;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* FORM DOG DETAILS */
+    #dogDetails {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #dogForm {
+        display: inline-block;
+    }
+
+    #dogForm label {
+        display: block;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 600;
+    }
+
+    #dogForm input, textarea {
+        border: 2px solid;
+        border-radius: 3px;
+    }
+
+    #dogSubmit {
+        width: 80%;
+        margin: 15px;
+        font-size: 40px;
+    }
+
+    /* REVIEWS */
+
+    #reviews {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+        background-color: rgb(231, 231, 231);
+    }
+
+    #reviews div {
+        display: inline-block;
+        height: 100px;
+        width: 250px;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        overflow: auto;
+        width: 80%;
+        text-align: center;
+        background-color: rgb(54, 156, 252);
+    }
+
+    footer ul {
+        display: flex;
+        color: rgb(250, 250, 250);
+        list-style-type: none;
+    }
+
+    footer ul li {
+        flex-grow: 1;
+    }
+
 }
