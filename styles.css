@@ -8,8 +8,6 @@ body, h1, h2, form, div, footer, header {
 
 body {
     background-color: #eee;
-    height: 100vh;
-    overflow: hidden;
 }
 
 /* HEADER */
@@ -30,7 +28,8 @@ header h1 {
 
 #content {
     display: flex;
-    height: 100%;
+    flex: 1;
+    overflow: scroll;
 }
 
 .contentTitle {
@@ -72,16 +71,15 @@ header h1 {
 /* REVIEWS */
 
 #reviews {
-    flex-grow: 1;
-    display: inline-block;
     text-align: center;
-    overflow: auto;
-    height: auto;
+    height: 100%;
     width: 300px;
+    padding: 20px;
     background-color: rgb(231, 231, 231);
 }
 
 #reviews div {
+    flex: 1;
     display: inline-block;
     height: 100px;
     width: 250px;
@@ -93,7 +91,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    overflow: auto;
     background-color: rgb(54, 156, 252);
 }
 
