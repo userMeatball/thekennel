@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>The Kennel</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <header>
+                <a href="index.html">The Kennel</a>
+            </header>
+        </header>
+
+        <nav>
+            <div>
+
+            </div>                
+        </nav>
+
+        <div id="content">
+            <div id="contentMain">
+                <div id="dogDetails" class="contentDiv">
+                    <h1 class="contentTitle">Tell us about your dog to get started.</h1><br>
+                    <form id="dogForm" name="dogForm" action="./">
+                        <label for="dogName">Dog's name *</label><br>
+                        <input type="text" id="dogName" name="dogName" required><br>
+                        <label for="dogGender">Gender *</label>
+                        <select name="dogGender" id="dogGender">
+                            <option value="male">Male</span>
+                            <option value="female">Female</span>
+                        </select>
+                        <label for="dogAge">Dog's age *</label>
+                        <input type="text" id="dogAge" name="dogAge" required>
+                        <label for="dogHealth">Dog's Health *</label>
+                        <input type="text" id="dogHealth" name="dogHealth" required>
+                        <label for="dogFriendly">Is your dog friendly?</label>
+                        <input type="checkbox" id="dogFriendly" name="dogFriendly"required >
+                        <label for="dogExtra">Is there anything else you would like to add?</label>
+                        <textarea id="dogExtra" name="dogExtra" rows="4" cols="50"></textarea>
+                        <button type="submit" id="dogSubmit" name="dogSubmit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h1>The Kennel</h1>
+            <ul>
+                <li>Hi</li>
+                <li>hello</li>
+                <li>Yo</li>
+                <li>you</li>
+            </ul>
+        </footer>
+
+        <script defer src="script.js"></script>
+    </body>
+
+</html>

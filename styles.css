@@ -2,7 +2,7 @@
 html {
     all: unset;
 }
-body, h1, h2, form, div, footer, header, ul, li, select {
+body, h1, h2, p, a, form, div, footer, header, ul, li, select, label, button, input {
     padding: 0;
     margin: 0;
 }
@@ -10,6 +10,14 @@ body, h1, h2, form, div, footer, header, ul, li, select {
 body {
     background-color: #eee;
 }
+
+/***** COLOURS *****/
+/*
+    header h1 background-color:  95A54A
+    content background-color: E6D683 
+    contentMain background-color: DBC952/A9A54C
+    highlight? color: 493857
+*/
 
 /***** DESKTOP *****/
 
@@ -63,8 +71,7 @@ body {
 
     /** consistent styles for seeMore buttons **/
     .seeMore {
-        margin: 15px;
-        padding: 5px;
+        padding: 0px 5px;
         font-size: 30px;
         font-family: 'Helvetica', sans-serif;
         font-weight: 600;
@@ -171,15 +178,16 @@ body {
     /***** HEADER *****/
 
     header {
-        height: 100px;
-        background-color: rgb(54, 156, 252);
+        height: 110px;
+        background-color: #5a6a7e;
     }
 
-    header h1 {
-        font-size: clamp(40px, 60px, 120px);
+    header a {
+        font-size: 60px;
         color: rgb(245, 245, 245);
         font-family: "Pacifico", cursive;
         font-weight: 100;
+        text-decoration: none;
     }
 
     /***** NAV *****/
@@ -191,6 +199,7 @@ body {
         height: 50px;
         width: 50px;
         background-color: beige;
+        /** **/ visibility: hidden;
     }
 
     nav div {
@@ -205,6 +214,7 @@ body {
         display: block;
         height: 100%;
         width: 100%;
+        background-image: url('./img/background.webp');
     }
 
     .contentTitle {
@@ -212,18 +222,54 @@ body {
         font-family: "Pacifico", cursive;
         font-weight: 400;
         font-style: normal;
+        color: white;
+        text-shadow: 2px 2px black;
+    }
+
+    .seeMore {
+        margin: 5px 0;
     }
 
     /***** CONTENTMAIN *****/
 
     #contentMain {
-        margin: 10px 25px;
+        margin: 0 25px;
+        background-color: #8b94a0ec;
     }
 
     /***** CONTENTDIV *****/
 
     .contentDiv {
         margin-bottom: 50px;
+    }
+
+    /** consistent styles for seeMore buttons **/
+    .seeMore {
+        padding: 0px 5px;
+        font-size: 30px;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 600;
+    }
+
+    /***** WELCOME *****/
+
+    #contentWelcome {
+        margin: 0 10px 20px 10px;
+        text-align: center;
+    }
+
+    #contentWelcome img {
+        max-height: 300px;
+        width: 100%;
+    }
+
+    #contentWelcome p 
+    {
+        font-size: 25px;
+        font-weight: 550;
+        letter-spacing: .5px;
+        color: white;
+        text-shadow: 1px 1px grey;
     }
 
     /***** DOGDETAILS *****/
@@ -239,16 +285,25 @@ body {
         display: block;
         font-family: 'Helvetica', sans-serif;
         font-weight: 600;
+        margin-bottom: 5px;
     }
 
     #dogForm input, textarea {
+        width: 80%;
         border: 2px solid;
         border-radius: 3px;
+        margin-bottom: 15px;
+    }
+
+    #dogForm textarea {
+        height: 80px;
     }
 
     #dogSubmit {
-        width: 80%;
-        margin: 15px;
+        width: 75%;
+        height: 60px;
+        border: 2px solid;
+        border-radius: 3px;
         font-size: 40px;
     }
 
@@ -256,15 +311,74 @@ body {
 
     #services {
         text-align: center;
+        margin: 0 15px 0px 15px;
+        padding-bottom: 10px;
+    }
+
+    #services h1 {
+        margin-bottom: 15px;
+    }
+
+    .serviceDiv {
+        min-height: 300px;
+        width: 100%;
+        
+        color: white;
+        font-size: 25px;
+        color: rgb(245, 245, 245);
+        font-family: "Pacifico", cursive;
+        font-weight: 100;
+    }
+
+    .serviceDiv a {
+        position: relative;
+        top: 140px;
+        padding: 0px 5px;
+        background-color: rgba(87, 87, 87);
+        border: 4px solid rgb(109, 109, 109);
+        text-decoration: none;
+    }
+    .serviceDiv a:visited {
+        color: white;
+    }
+
+    #serviceBoarding {
+        background-image: url("./img/kennelLux.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 300px;
+        margin-bottom: 10px;
+    }
+    #serviceBoarding div h1 {
+        text-shadow: 2px 2px black;
+    }
+
+    #serviceWalking {
+        background-image: url("./img/dogwalk1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 300px;
+        margin-bottom: 10px;
+    }
+    #serviceWalking div h1 {
+        text-shadow: 2px 2px black;
+    }
+
+    #serviceGrooming {
+        background-image: url("./img/doggroom1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 300px;
+    }
+    #serviceGrooming div h1 {
+        text-shadow: 2px 2px black;
     }
 
     /* REVIEWS */
 
     #reviews {
         max-height: 600px;
+        padding: 25px 0;
         text-align: center;
         overflow: hidden;
-        background-color: rgb(231, 231, 231);
+        background-color: #A9A54C;
     }
 
     #reviews div {

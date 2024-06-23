@@ -8,6 +8,8 @@ privacy
 focus on viewport mobile
 
 go through it again obvs
-want to load mobile only on mobile ya get me??
 tablet viewport
 script - creating divs based on viewport
+textarea innner font size
+pawprint background
+tv :)
