@@ -1,7 +1,8 @@
 navBtn = document.getElementById("navBtn");
+nav = document.getElementById("nav");
 navShow = document.getElementById("navShow");
 navBtn.addEventListener("click", function(e) {
-
+    if (nav.child.id)
 })
 
 // enquiry form
