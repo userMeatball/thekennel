@@ -13,14 +13,24 @@
     
     <body>
         <header>
-            <a href="index.html">The Kennel</a>
+            <div id="headerContainer">
+                <a href="index.html">The Kennel</a>
+                <nav>
+                    <div id="navClose">
+                        
+                    </div>
+                    <div id="navOpen">
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Testimonials</li>
+                            <li>About</li>
+                            <li>Gallery</li>
+                        </ul>
+                    </div>                
+                </nav>
+            </div>
         </header>
-
-        <nav>
-            <div>
-
-            </div>                
-        </nav>
 
         <div id="content">
 
@@ -56,24 +66,24 @@
                         </div>
                     </div>
                 </div>
+                <div id="reviews">
+                    <h1 class="contentTitle">Here are some of our reviews</h1><br>
+                    <div class="reviewContainer">
+                        <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
+                        <button class="seeMore">See more...</button>
+                    </div>
+                    <div class="reviewContainer">
+                        <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
+                        <button class="seeMore">See more...</button>
+                    </div>
+    
+                    <!-- if no more reviews, sticky reviews on scroll... -->
+                    <button type="button" id="reviewMore" class="seeMore">Autoload...</button>
+                </div>
+
             </div>
 
-            <div id="reviews">
-                <h1 class="contentTitle">Here are some of our reviews</h1><br>
-                <div class="reviewContainer">
-                    <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
-                    <button class="seeMore">See more...</button>
-                </div>
-                <div class="reviewContainer">
-                    <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
-                    <button class="seeMore">See more...</button>
-                </div>
-
-                <!-- if no more reviews, sticky reviews on scroll... -->
-                <button type="button" id="reviewMore" class="seeMore">Autoload...</button>
-
-            </div>
-
+        <!-- end content -->
         </div>
 
         <footer>

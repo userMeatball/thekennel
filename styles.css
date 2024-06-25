@@ -178,12 +178,22 @@ body {
     /***** HEADER *****/
 
     header {
-        height: 110px;
+        height: 80px;
         background-color: #5a6a7e;
+        line-height: 1;
     }
 
-    header a {
-        font-size: 60px;
+    #headerContainer {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #headerContainer a {
+        margin-left: 15px;
+        font-size: 45px;
         color: rgb(245, 245, 245);
         font-family: "Pacifico", cursive;
         font-weight: 100;
@@ -193,19 +203,37 @@ body {
     /***** NAV *****/
 
     nav {
-        position: absolute;
-        right: 5px;
-        top: 10px;
-        height: 50px;
-        width: 50px;
-        background-color: beige;
-        /** **/ visibility: hidden;
+        position: fixed;
+        top: 15px;
+        right: 15px;
     }
 
-    nav div {
-        position: sticky;
+    #navClose{
+        height: 50px;
+        width: 50px;
+        border: 2px solid;
+        background-color: beige;
+        visibility: hidden;
+    }
+
+    #navOpen {
+        position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
+        height: 100%;
+        width: 75%;
+        background-color: beige;
+        padding: 10px 0px 0px 10px;
+    }
+    #navOpen ul {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        list-style-type: none;
+    }
+    #navOpen li {
+        margin-bottom: 30px;
+        font-size: 30px;
     }
 
     /***** CONTENT *****/
@@ -265,7 +293,7 @@ body {
 
     #contentWelcome p 
     {
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 550;
         letter-spacing: .5px;
         color: white;
@@ -322,7 +350,6 @@ body {
     .serviceDiv {
         min-height: 300px;
         width: 100%;
-        
         color: white;
         font-size: 25px;
         color: rgb(245, 245, 245);
@@ -337,6 +364,7 @@ body {
         background-color: rgba(87, 87, 87);
         border: 4px solid rgb(109, 109, 109);
         text-decoration: none;
+        color: white;
     }
     .serviceDiv a:visited {
         color: white;
@@ -350,6 +378,7 @@ body {
     }
     #serviceBoarding div h1 {
         text-shadow: 2px 2px black;
+        font-weight: 100;
     }
 
     #serviceWalking {
@@ -360,6 +389,7 @@ body {
     }
     #serviceWalking div h1 {
         text-shadow: 2px 2px black;
+        font-weight: 100;
     }
 
     #serviceGrooming {
@@ -369,6 +399,7 @@ body {
     }
     #serviceGrooming div h1 {
         text-shadow: 2px 2px black;
+        font-weight: 100;
     }
 
     /* REVIEWS */
@@ -378,7 +409,6 @@ body {
         padding: 25px 0;
         text-align: center;
         overflow: hidden;
-        background-color: #A9A54C;
     }
 
     #reviews div {
@@ -396,7 +426,7 @@ body {
         bottom: 0;
         width: 100%;
         overflow: hidden;
-        background-color: rgb(54, 156, 252);
+        background-color: #5a6a7e;
     }
 
     footer h1 {
