@@ -13,3 +13,6 @@ script - creating divs based on viewport
 textarea innner font size
 pawprint background
 tv :)
+turn off scrolling when nav open
+nav button change to x on when open vice versa
+scroll up button

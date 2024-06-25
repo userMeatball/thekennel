@@ -187,12 +187,11 @@ body {
         display: flex;
         width: 100%;
         height: 100%;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
     }
 
     #headerContainer a {
-        margin-left: 15px;
         font-size: 45px;
         color: rgb(245, 245, 245);
         font-family: "Pacifico", cursive;
@@ -200,40 +199,46 @@ body {
         text-decoration: none;
     }
 
-    /***** NAV *****/
-
-    nav {
+    #navBtn {
         position: fixed;
         top: 15px;
         right: 15px;
-    }
-
-    #navClose{
         height: 50px;
         width: 50px;
+        z-index: 100;
         border: 2px solid;
         background-color: beige;
+    }
+    #navHide {
         visibility: hidden;
     }
-
-    #navOpen {
+    #navShow {
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
-        width: 75%;
-        background-color: beige;
-        padding: 10px 0px 0px 10px;
+        width: 100%;
+        background-color: #8b94a0ec;
+        /* visibility: hidden; */
     }
-    #navOpen ul {
+    #navShow ul {
         display: flex;
+        height: 100%;
         flex-direction: column;
-        height: 80%;
+        gap: 4.5rem;
+        justify-content: center;
+        align-items: center;
         list-style-type: none;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 600;
     }
-    #navOpen li {
-        margin-bottom: 30px;
-        font-size: 30px;
+    #navShow li {
+        font-size: 50px;
+        color: rgb(245, 245, 245);
+        font-family: "Pacifico", cursive;
+        font-weight: 100;
+        text-shadow: 2px 2px black;
+        font-weight: 100;
     }
 
     /***** CONTENT *****/
@@ -350,10 +355,14 @@ body {
     .serviceDiv {
         min-height: 300px;
         width: 100%;
-        color: white;
+    }
+    
+    .serviceDiv h1 {
         font-size: 25px;
         color: rgb(245, 245, 245);
         font-family: "Pacifico", cursive;
+        font-weight: 100;
+        text-shadow: 2px 2px black;
         font-weight: 100;
     }
 
@@ -376,10 +385,6 @@ body {
         background-size: 100% 300px;
         margin-bottom: 10px;
     }
-    #serviceBoarding div h1 {
-        text-shadow: 2px 2px black;
-        font-weight: 100;
-    }
 
     #serviceWalking {
         background-image: url("./img/dogwalk1.jpg");
@@ -387,19 +392,11 @@ body {
         background-size: 100% 300px;
         margin-bottom: 10px;
     }
-    #serviceWalking div h1 {
-        text-shadow: 2px 2px black;
-        font-weight: 100;
-    }
 
     #serviceGrooming {
         background-image: url("./img/doggroom1.jpg");
         background-repeat: no-repeat;
         background-size: 100% 300px;
-    }
-    #serviceGrooming div h1 {
-        text-shadow: 2px 2px black;
-        font-weight: 100;
     }
 
     /* REVIEWS */

@@ -1,3 +1,10 @@
+navBtn = document.getElementById("navBtn");
+navShow = document.getElementById("navShow");
+navBtn.addEventListener("click", function(e) {
+
+})
+
+// enquiry form
 dogForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
