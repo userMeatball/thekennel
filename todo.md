@@ -16,3 +16,4 @@ tv :)
 turn off scrolling when nav open
 nav button change to x on when open vice versa
 scroll up button
+must have js enabled
