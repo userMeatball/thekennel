@@ -13,7 +13,12 @@
     
     <body>
         <nav>
-            <div id="navBtn"></div>
+            <div id="navBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div id="navDisplay">
                 <ul>
                     <li>Home</li>
@@ -57,19 +62,22 @@
                     </div>
                 </div>
 
-                <div id="reviews">
+                <div id="reviews" class="contentDiv">
                     <h1 class="contentTitle">Here are some of our reviews</h1>
-                    <div class="reviewContainer">
-                        <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
-                        <button class="seeMore">See more...</button>
+                    <div id="reviewWrapper">
+                        <div class="review">
+                                <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni </p>
+                                <p>- you know</p>
+                        </div>
+                        <div class="review">
+                            <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
+                            <p>- Ya mam</p>
+                        </div>
+                        <div class="review">
+                            <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
+                            <p>- Anonymous</p>
+                        </div>
                     </div>
-                    <div class="reviewContainer">
-                        <p class="reviewPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit asperiores illo facilis magni perferendis corporis ratione quae dolore obcaecati temporibus iusto sit, itaque optio adipisci, vero consectetur quo velit? Lorem ip...</p>
-                        <button class="seeMore">See more...</button>
-                    </div>
-    
-                    <!-- if no more reviews, sticky reviews on scroll... -->
-                    <button type="button" id="reviewMore" class="seeMore">Autoload...</button>
                 </div>
 
             </div>

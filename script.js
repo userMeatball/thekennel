@@ -1,18 +1,11 @@
 nav = document.getElementsByTagName("nav");
 navBtn = document.querySelector("#navBtn");
 navDisplay = document.querySelector("#navDisplay");
-navState = false; /* false = hidden true = show */
 
 navBtn.onclick = function() {
-    if (navState == false) {
-        navDisplay.style.display = "block";
-        document.body.style.overflow = "hidden"; // stop scrolling
-        navState = true;
-    } else if (navState == true) {
-        navDisplay.style.display = "none";
-        document.body.style.overflow = "visible"; // enable scrolling
-        navState = false;
-    }
+    document.body.classList.toggle('active'); // bring this first or else can scroll for .2s
+    navBtn.classList.toggle('active');
+    navDisplay.classList.toggle('active');
 }
 
 // enquiry form
